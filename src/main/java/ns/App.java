@@ -7,7 +7,9 @@ public final class App {
     public static void main(String[] args) {
         
         Scanner input = new Scanner(System.in);
-
+        
+        
+        System.out.print("Please enter a number: ");
 
         int number = 0;
 
@@ -21,7 +23,7 @@ public final class App {
         number = input.nextInt();
 
         
-        System.out.println("Hello World! "+number);
+        System.out.println("The number is: "+number);
 
 
 
