@@ -1,17 +1,31 @@
 package ns;
 
-/**
- * Hello world!
- */
-public final class App {
-    private App() {
-    }
+import java.util.Scanner;
 
-    /**
-     * Says hello to the world.
-     * @param args The arguments of the program.
-     */
+public final class App {
+    
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
+        Scanner input = new Scanner(System.in);
+
+
+        int number = 0;
+
+        while (!input.hasNextInt()) {
+            
+            System.out.println("It isn't a numeric value");
+            System.out.print("Please enter a number: ");
+            input.nextLine();
+        }
+
+        number = input.nextInt();
+
+        
+        System.out.println("Hello World! "+number);
+
+
+
+        input.close();
+
     }
 }
