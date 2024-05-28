@@ -20,8 +20,8 @@ public final class App {
 
         for(int i=0; i<array.length; i++){
 
-            System.out.println("Ingrese el valor: ");
-           
+            System.out.print("Ingrese el valor: "+i+" ");
+            array[i] = input.nextInt();
 
         }
 
