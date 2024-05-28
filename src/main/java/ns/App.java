@@ -12,14 +12,20 @@ public final class App {
         Scanner input = new Scanner(System.in);
 
 
+        
+
+
         int[] array  = {6, 3, 1, 43, 9, 10, 45, 4, 8};
         boolean condition = true;
         int arrayCopy;
 
 
         System.out.print("Ingresa 1 o 2 para ascendente o descendente: ");
-        int size = input.nextInt();
+        int upDown = input.nextInt();
 
+
+
+        
       
         while (true) {
             
@@ -49,7 +55,7 @@ public final class App {
 
 
 
-       if (size==1) {
+       if (upDown==1) {
         
         for (int iPrint=0; iPrint < array.length; iPrint++){
 
