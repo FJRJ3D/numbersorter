@@ -12,9 +12,27 @@ public final class App {
         Scanner input = new Scanner(System.in);
 
 
-        
+        System.out.print("Ingrese el tamaño de la array: ");
+        int size = input.nextInt();
 
 
+        int[] array = new int[size];
+
+        for(int i=0; i<array.length; i++){
+
+            System.out.println("Ingrese el valor: ");
+           
+
+        }
+
+       
+        for (int iPrint=0; iPrint < array.length; iPrint++){
+
+            System.out.print(array[iPrint] + "  ");
+
+        }
+
+/*
         int[] array  = {6, 3, 1, 43, 9, 10, 45, 4, 8};
         boolean condition = true;
         int arrayCopy;
@@ -25,7 +43,7 @@ public final class App {
 
 
 
-        
+
       
         while (true) {
             
@@ -77,7 +95,7 @@ public final class App {
        }
 
         
-
+*/
     
 
 
