@@ -1,15 +1,3 @@
 # Ordenador de numeros
 
-Este **programa** usa
-
-
-**Problemas**
-
-1º Crear una cantidad de numeros **(array)**
-
-2º Ordenar numeros ascendente o descendente **(algoritmo de ordenación)**
-
-3º Evitar poner el **numero 4**
-
-4º Hacer programa **funcional**
-
+En este **programa** he usado una **array** que mediante dos **input** se puede agregar la cantidad de números que tiene y cuales son esos números, despues de eso, mediante otro **input** se decide si se ordenaran los números de forma ascendente o descendente, seguido a esto, mediante el **algoritmo** de ordenamiento **burbuja** se ordenan los números ingresados siguiendo la siguiente lógica: mediante un **while loop** se repite la operación hasta que se indica lo contrario, dentro de este mediante un **for loop** se comprueba los numeros y mediante una **condicional** dentro del **for loop** si el numero de la izquierda es mayor al de la derecha se guarda el número de la derecha en un **int** se copia el de la izquierda a la derecha y luego se sustituye el de la izquierda por el **int** repitiendo esta operacion hasta que todos los números son cambiados y entonces se pasa a otra **condicional** que abre el **while loop** . Por último, mediante una **condicional** y según los datos ingresados se muestra o bien los números de forma ascendente o descendente.
