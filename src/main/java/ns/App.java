@@ -38,7 +38,7 @@ public final class App {
     
         
         System.out.print("Write how you want to sort the numbers up/down: ");
-        String upDown = input.nextLine();
+        String upDown = input.next();
 
         
 
@@ -72,7 +72,7 @@ public final class App {
 
        System.out.print("Sortered numbers: ");
 
-       if (upDown=="up") {
+       if (upDown.equals("up")) {
         
         for (int iPrint=0; iPrint < array.length; iPrint++){
 
@@ -82,7 +82,7 @@ public final class App {
 
 
        }
-       else if (upDown=="down") {
+       else if (upDown.equals("down")) {
 
 
         for (int iPrint=array.length-1; iPrint >= 0 ; iPrint--){
