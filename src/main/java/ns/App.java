@@ -20,7 +20,7 @@ public final class App {
 
         for(int i=0; i<array.length; i++){
 
-            System.out.print("Ingrese el valor: "+i+" ");
+            System.out.print("Ingrese el valor: "+(i+1)+" ");
             array[i] = input.nextInt();
 
         }
