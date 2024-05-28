@@ -11,8 +11,11 @@ public final class App {
     
         Scanner input = new Scanner(System.in);
 
+        System.out.println("==============================================================================");
+        System.out.println("WELCOME TO NUMBER SORTER");
+        System.out.println("==============================================================================");
 
-        System.out.print("Ingrese el tamaño de la array: ");
+        System.out.print("Enter the number of numbers: ");
         int size = input.nextInt();
 
 
@@ -20,29 +23,24 @@ public final class App {
 
         for(int i=0; i<array.length; i++){
 
-            System.out.print("Ingrese el valor: "+(i+1)+" ");
+            System.out.print("Enter the number "+(i+1)+": ");
             array[i] = input.nextInt();
 
         }
-
-       
-        for (int iPrint=0; iPrint < array.length; iPrint++){
-
-            System.out.print(array[iPrint] + "  ");
-
-        }
-
-/*
-        int[] array  = {6, 3, 1, 43, 9, 10, 45, 4, 8};
+        
+        
+        System.out.println("==============================================================================");
+           
+        
         boolean condition = true;
         int arrayCopy;
 
+    
+        
+        System.out.print("Write how you want to sort the numbers up/down: ");
+        String upDown = input.nextLine();
 
-        System.out.print("Ingresa 1 o 2 para ascendente o descendente: ");
-        int upDown = input.nextInt();
-
-
-
+        
 
       
         while (true) {
@@ -69,11 +67,12 @@ public final class App {
        }
 
      
+       System.out.println("==============================================================================");
 
 
+       System.out.print("Sortered numbers: ");
 
-
-       if (upDown==1) {
+       if (upDown=="up") {
         
         for (int iPrint=0; iPrint < array.length; iPrint++){
 
@@ -82,7 +81,8 @@ public final class App {
         }
 
 
-       }else{
+       }
+       else if (upDown=="down") {
 
 
         for (int iPrint=array.length-1; iPrint >= 0 ; iPrint--){
@@ -90,23 +90,15 @@ public final class App {
             System.out.print(array[iPrint] + "  ");
         
         }
-
+        
+        
 
        }
 
-        
-*/
-    
 
+       System.out.println(" ");
+       System.out.println("==============================================================================");
 
-        
-        
-
-
-
-      
-
-        
 
         input.close();
         
