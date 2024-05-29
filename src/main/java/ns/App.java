@@ -31,24 +31,17 @@ public final class App {
 
             while (number4==4) {
                 
-                System.out.println("El valor 4 no es aceptado.");
+                System.out.println("Four is not valid");
                 System.out.print("Enter the number "+(i+1)+": ");
                 array[i] = input.nextInt();
                 number4=array[i];
             }
 
-            if (number4 == 4) {
-
-                System.out.println("El valor 4 no es aceptado.");
-                System.out.print("Enter the number "+(i+1)+": ");
-                array[i] = input.nextInt();             
             
-
-            }else{
 
                 array[i] = number4;
 
-            }
+            
             
 
         }
