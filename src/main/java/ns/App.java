@@ -18,13 +18,38 @@ public final class App {
         System.out.print("Enter the number of numbers: ");
         int size = input.nextInt();
 
-
+        int number4 = 0;
+                
         int[] array = new int[size];
 
         for(int i=0; i<array.length; i++){
-
+            
+            
             System.out.print("Enter the number "+(i+1)+": ");
-            array[i] = input.nextInt();
+            number4 = input.nextInt();
+            
+
+            while (number4==4) {
+                
+                System.out.println("El valor 4 no es aceptado.");
+                System.out.print("Enter the number "+(i+1)+": ");
+                array[i] = input.nextInt();
+                number4=array[i];
+            }
+
+            if (number4 == 4) {
+
+                System.out.println("El valor 4 no es aceptado.");
+                System.out.print("Enter the number "+(i+1)+": ");
+                array[i] = input.nextInt();             
+            
+
+            }else{
+
+                array[i] = number4;
+
+            }
+            
 
         }
         
